@@ -1,0 +1,32 @@
+<h1>Component Interaction</h1>
+<hr>
+
+<h2>{{"Hello "+ parentData}}</h2>
+
+<button (click)="fireEvent()">Event Emit</button>
+<hr>
+<h1 style="color:red;">Pipes : Transforms the data only for the view</h1>
+<hr>
+<h2>{{name}}</h2>
+<h2>Lowercase : {{name | lowercase}}</h2>
+
+<h2>Uppercase : {{name | uppercase}}</h2>
+<h2>TitleCsase : {{name | titlecase}}</h2>
+<h2>Slice like from  to : {{name | slice:3}}</h2>
+<h2>Json Person Details : {{person | json}}</h2>
+<h2>Number : {{5.3265 | number:'2.3-4'}}</h2>
+<h2>Number : {{5.3265 | number:'1.2-3'}}</h2>
+
+<h2>Number : {{5.3265 | number:'2.2-5'}}</h2>
+<h2>Number : {{5.3265 | number:'2.1-2'}}</h2>
+<h2>Percentage : {{0.25 | percent}}</h2>
+<h2>Currency : {{250 | currency}}</h2>
+<h2>Currency : {{250 | currency:'GBP'}}</h2>
+<h2>Currency : {{250 | currency:'EUR':'code'}}</h2>
+<h2>Date : {{date}}</h2>
+<h2>Date : {{date | date:'short'}}</h2>
+<h2>Date : {{date | date:'shortDate'}}</h2>
+<h2>Date : {{date | date:'shortTime'}}</h2>
+<h2>Date : {{date | date:'mediumDate'}}</h2>
+<h2>Date : {{date | date:'mediumTime'}}</h2>
+
