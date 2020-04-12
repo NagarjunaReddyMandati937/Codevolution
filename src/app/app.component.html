@@ -1,1 +1,46 @@
-<app-test></app-test>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Routing with Nav Bar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-image: url('/assets/logo.jpeg');
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: 100% 100%;
+    }
+    </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">N.R Technologies</a>
+      </div>
+      <ul class="nav navbar-nav pull-right">
+        <li class="active"><a href="#" routerLink='/home' routerLinkActive='active'>Home</a></li>
+
+        <li><a href="#" routerLink='/technologies' routerLinkActive='active'>Technology</a></li>
+        <li> <a href="#" routerLink='/about' routerLinkActive='active'>About Us</a></li>
+        
+        <li><a href="#" routerLink='/careers' routerLinkActive='active'>Careers</a></li>
+        <li><a href="#" routerLink='/signup' routerLinkActive='active'><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#" routerLink='/login' routerLinkActive='active'><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+</body>
+
+</html>
+<router-outlet></router-outlet>
