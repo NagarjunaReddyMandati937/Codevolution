@@ -8,6 +8,7 @@ import { TechnologyComponent } from './technology/technology.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'careers', component: CareersComponent },
   { path: 'technologies', component: TechnologyComponent },
+  {path : 'welcome',component:WelcomeComponent},
   { path: '**', component: PageNotFoundComponent },
 ];
 
@@ -30,4 +32,4 @@ export const routeComponents = [HomeComponent,
   AboutusComponent,
   CareersComponent, SignupComponent,
   LoginComponent, PageNotFoundComponent,
-  TechnologyComponent]
+  WelcomeComponent,TechnologyComponent]
