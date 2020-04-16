@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'fromServices';
+  title = 'Angular_Curd_With_Spring_Mysql';
 }
